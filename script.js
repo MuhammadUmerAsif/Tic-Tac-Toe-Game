@@ -52,7 +52,7 @@ const checkWinner=()=>{
                     if(box1Val === box2Val && box2Val === box3Val)
                         {
                             setTimeout(function(){
-                                winnerTag.innerHTML="Winner:"
+                                winnerTag.innerHTML="Winner: None"
                                 boxes.forEach((box)=>{
                                     box.innerText="";
                                     box.disabled=false;
@@ -63,12 +63,12 @@ const checkWinner=()=>{
                                 
                                 if(box1Val==="X")
                                     {
-                                        winnerTag.innerText=winnerTag.innerText+"Player 1 (X) Please wait for 2s for new Game!";
+                                        winnerTag.innerText="Winner: Player 1 (X) Please wait for 2s for new Game!";
 
                                     }
                                 else
                                 {
-                                    winnerTag.innerText=winnerTag.innerText+"Player 2 (O) Please wait for 2s for new Game!";
+                                    winnerTag.innerText="Winner: Player 2 (O) Please wait for 2s for new Game!";
                                 }
                            
                         }
